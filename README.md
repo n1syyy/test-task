@@ -35,7 +35,7 @@ Update your `hosts` file and add your local domain (e.g. test.loc)
 
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to your `config.example.php` file and rename it to `config.php`
+To run this project, you will need to edit the following environment variables values in your `config.example.php` file and rename it to `config.php`
 
 `API_URL`
 
