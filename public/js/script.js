@@ -60,22 +60,22 @@ $(document).ready(function() {
             },
             // Specify validation error messages
             messages: {
-            firstname: {
-                required: "First name is required",
-                lettersonly: "Only letters allowed"
-            },
-            lastname: {
-                required: "Last name is required",
-                lettersonly: "Only letters allowed"
-            },
-            phone: {
-                required: "Phone number is required",
-                validPhone: "Enter a valid phone number"
-            },
-            email: {
-                required: "Email is required",
-                email: "Enter a valid email address"
-            }
+                firstname: {
+                    required: "First name is required",
+                    lettersonly: "Only letters allowed"
+                },
+                lastname: {
+                    required: "Last name is required",
+                    lettersonly: "Only letters allowed"
+                },
+                phone: {
+                    required: "Phone number is required",
+                    validPhone: "Enter a valid phone number"
+                },
+                email: {
+                    required: "Email is required",
+                    email: "Enter a valid email address"
+                }
             }
             
         });
@@ -91,7 +91,7 @@ $(document).ready(function() {
                 let responseMessage = $("#responseMessage");
 
                 $.ajax({
-                    url: '../ajax/lead_submit.php',
+                    url: '../api/lead_submit.php',
                     type: 'POST',
                     data: $("#lead-form").serialize(),
                     dataType: 'json',
@@ -123,7 +123,7 @@ $(document).ready(function() {
             const dateTo = $("input[name='date_to']").val();
 
             $.ajax({
-                url: '../ajax/lead_filter.php',
+                url: '../api/lead_filter.php',
                 type: 'POST',
                 data: {
                     date_from: dateFrom,
