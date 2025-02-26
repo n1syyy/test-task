@@ -12,8 +12,8 @@
 <body>
 
     <nav>
-        <a href="/" class='active'>Add new Lead</a>
-        <a href="statuses.php">Leads Statuses</a>
+        <a href="#" class='active'>Add new Lead</a>
+        <a href="/statuses">Leads Statuses</a>
     </nav>
 
     <div class="container">
